@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- this game is made for simple presentation purpose only-->
+   <h1>Rock Paper Scissors</h1>
+   <p>select any move</p>
+  <button class="button" onclick="game(0);showResult()"><img src="dwayne-johnson-the-rock-hbz.png" alt="rock" class="button" ></button>
+  <button  onclick="game(1); showResult()" class="button"><img src="10-removebg-preview.png" alt="paper" class="button"></button>
+  <button  onclick="game(2); showResult()" class="button"><img src="images-removebg-preview.png" alt="scissor" class="button"></button>
+  <p class="resultDisplay"></p>
+  <p class="choice"></p>
+ <p class="result"></p>
+  <button class="resetButton" onclick="score.wins=0;
+  score.losses=0;
+  score.ties=0;
+  localStorage.removeItem('score');
+  showResult()">reset score</button>
+ 
+ <script src="script.js"></script>
+</body> 
+</html>
